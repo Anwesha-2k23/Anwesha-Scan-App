@@ -28,7 +28,7 @@ data class ScanApiResponse(
 data class EventsList(
     val id: String? = null,
     val name: String? = null,
-    val organizer: List<List<String>>? = null,
+    val organizer: String? = null,
     val venue: String? = null,
     val description: String? = null,
     val start_time: String? = null,
@@ -44,6 +44,8 @@ data class EventsList(
     val is_active: Boolean? = null,
     val is_online: Boolean? = null,
     val registration_link: String? = null,
-    val is_solo : Boolean? = null
+    val order: Int,
+    val payment_link: String?,
+    val payment_key: String?
 
 ): Serializable

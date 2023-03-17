@@ -63,10 +63,10 @@
 
     <TextView
         android:id="@+id/curr_entry_status"
-        android:layout_width="70dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_regular"
-        android:text="OUT"
+        android:text="UNMARK"
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="20sp" />
@@ -115,7 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="In"
+                        android:text="MARK"
                         android:textColor="@color/sec_grey"
                         android:textSize="16sp" />
 
@@ -124,7 +124,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Out"
+                        android:text="UNMARK"
                         android:textColor="@color/sec_grey"
                         android:textSize="16sp" />
                 </RadioGroup>

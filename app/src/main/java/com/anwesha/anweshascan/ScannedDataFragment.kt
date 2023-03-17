@@ -130,7 +130,7 @@ class ScannedDataFragment : Fragment() {
             eventId = it.getString("eventId")!!
         }
 
-        if(binding.currEntryStatus.text == "OUT") {
+        if(binding.currEntryStatus.text == "UNMARK") {
             binding.currEntryStatus.setBackgroundColor(Color.RED)
 
         }

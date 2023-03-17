@@ -16,7 +16,7 @@ const val BASE_URL = "https://backend.anwesha.live"
 interface ScanApi {
 
 
-    @GET("/event/allevents")
+    @POST("/event/allevents")
     fun getAllEvents() : Call<MutableList<EventsList>>
 
     @POST("/event/checkeventregistration/")

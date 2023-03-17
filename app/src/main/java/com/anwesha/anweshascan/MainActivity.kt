@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     bundle.putString("eventId", eventId)
                     bundle.putString("anweshaId", repbody!!.anwesha_id)
                     bundle.putString("userName", repbody.username)
-                    bundle.putString("entry_status", if(repbody.has_entered == true) "IN" else "OUT")
+                    bundle.putString("entry_status", if(repbody.has_entered == true) "MARK" else "UNMARK")
 
                     val fragmentManager = supportFragmentManager.beginTransaction()
                     fragmentManager.addToBackStack(null)
