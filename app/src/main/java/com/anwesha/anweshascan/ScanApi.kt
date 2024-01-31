@@ -11,7 +11,7 @@ import retrofit2.http.POST
 
 import retrofit2.http.Query
 
-const val BASE_URL = "https://backend.anwesha.live"
+const val BASE_URL = "https://anweshabackend.xyz"
 
 interface ScanApi {
 

@@ -26,7 +26,8 @@ class EventsViewModel: ViewModel() {
                 Log.d("response", response.code().toString())
                 Log.d("response", response.message())
                 if(response.isSuccessful) {
-                    eventList.postValue(response.body() as ArrayList)
+                    sortEvents(response.body() as ArrayList)
+
                 }
             }
 
@@ -36,4 +37,8 @@ class EventsViewModel: ViewModel() {
         })
     }
 
+    private fun sortEvents(events: ArrayList<EventsList>) {
+        events.sortBy { it.name }
+        eventList.postValue(events)
+    }
 }
